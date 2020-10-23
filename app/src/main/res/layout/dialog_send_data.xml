@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="267dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_rec_white_7dp">
+
+    <LinearLayout
+        android:id="@+id/service_uuid_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff333333"
+            android:textSize="17dp"
+            android:text="Service UUID:"/>
+
+        <TextView
+            android:id="@+id/tv_service_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ff333333"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/characteristic_uuid_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/service_uuid_info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff333333"
+            android:textSize="17dp"
+            android:text="Service UUID:"/>
+
+        <TextView
+            android:id="@+id/tv_characteristic_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#ff333333"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/characteristic_uuid_info"
+        android:layout_marginTop="10dp"
+        android:background="#F6F6F6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/divider">
+        <EditText
+            android:id="@+id/et_dialog_send_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_dialog_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"/>
+    </LinearLayout>
+
+</RelativeLayout>
